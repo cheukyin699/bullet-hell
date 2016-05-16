@@ -4,21 +4,26 @@ LD := g++
 LDFLAGS := -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
 
 EXE := bullet-hell
-OBJ := obj/game.o obj/main.o
+OBJ := obj/menu.o obj/play.o obj/game.o obj/main.o
 
 all: $(EXE)
 
 clean:
-	rm -f $(OBJ) $(EXE)
+	@echo "Cleaning..."
+	@rm -f $(OBJ) $(EXE)
 
 $(EXE): obj/ $(OBJ)
-	$(LD) $(LDFLAGS) $(OBJ) -o $@
+	@echo "Linking executable $@"
+	@$(LD) $(LDFLAGS) $(OBJ) -o $@
 
 obj/:
-	mkdir $@
+	@echo "Creating directory $@"
+	@mkdir $@
 
 obj/%.o: src/%.cc src/%.h
-	$(CXX) $(CXXFLAGS) $< -o $@
+	@echo "CXX $<"
+	@$(CXX) $(CXXFLAGS) $< -o $@
 
 obj/%.o: src/%.cc
-	$(CXX) $(CXXFLAGS) $< -o $@
+	@echo "CXX $<"
+	@$(CXX) $(CXXFLAGS) $< -o $@
