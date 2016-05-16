@@ -13,10 +13,9 @@ void Game::run() {
     // Initialize everything
     RenderWindow w(VideoMode(WIDTH, HEIGHT), TITLE, Style::Close);
     Clock clock;
+    Event evt;
 
     while (w.isOpen()) {
-        Event evt;
-
         // Event handling
         while (w.pollEvent(evt)) {
             switch (evt.type) {
