@@ -14,9 +14,9 @@ private:
     Mode m = NONE;
 
 public:
-    virtual void handle() = 0;
-    virtual void update(Time) = 0;
-    virtual void draw(RenderWindow&) = 0;
+    virtual void handle(Event e) = 0;
+    virtual void update(Time t) = 0;
+    virtual void draw(RenderWindow& w) = 0;
 };
 
 #endif

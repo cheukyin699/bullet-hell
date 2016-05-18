@@ -4,7 +4,7 @@ LD := g++
 LDFLAGS := -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
 
 EXE := bullet-hell
-OBJ := obj/menu.o obj/play.o obj/game.o obj/main.o
+OBJ := obj/widget.o obj/button.o obj/menu.o obj/play.o obj/game.o obj/main.o
 
 all: $(EXE)
 

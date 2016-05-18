@@ -1,5 +1,3 @@
-#include <SFML/Graphics.hpp>
-
 #include "game.h"
 
 using namespace sf;

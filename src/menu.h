@@ -9,9 +9,9 @@ private:
 public:
     MenuState();
 
-    void handle();
-    void update(Time);
-    void draw(RenderWindow&);
+    void handle(Event e);
+    void update(Time t);
+    void draw(RenderWindow& w);
 };
 
 #endif

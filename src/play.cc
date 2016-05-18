@@ -3,12 +3,12 @@
 PlayState::PlayState() {
 }
 
-void PlayState::handle() {
+void PlayState::handle(Event e) {
 }
 
-void PlayState::update(Time) {
+void PlayState::update(Time t) {
 }
 
-void PlayState::draw(RenderWindow&) {
+void PlayState::draw(RenderWindow& w) {
 }
 

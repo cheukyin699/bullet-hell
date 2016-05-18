@@ -3,12 +3,12 @@
 MenuState::MenuState() {
 }
 
-void MenuState::handle() {
+void MenuState::handle(Event e) {
 }
 
-void MenuState::update(Time) {
+void MenuState::update(Time t) {
 }
 
-void MenuState::draw(RenderWindow&) {
+void MenuState::draw(RenderWindow& w) {
 }
 
