@@ -6,10 +6,11 @@
 using namespace sf;
 
 class Widget {
-public:
+private:
     Vector2i pos;
     Vector2u size;
 
+public:
     Widget(int x, int y, int w, int h);
     Widget(Vector2i pos, Vector2u size);
 
