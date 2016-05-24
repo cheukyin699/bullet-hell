@@ -2,11 +2,11 @@
 
 
 Button::Button(int x, int y, int w, int h, string lbl) :
-    pos(Vector2i(x, y)), size(Vector2u(w, h)) {
+    Widget(x, y, w, h), label(lbl) {
 }
 
 Button::Button(Vector2i p, Vector2u s, string lbl) :
-    pos(p), size(s) {
+    Widget(p, s), label(lbl) {
 }
 
 

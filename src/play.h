@@ -1,7 +1,7 @@
 #ifndef PLAY_H
 #define PLAY_H
 
-#include "play.h"
+#include "state.h"
 
 class PlayState : public State {
 private:

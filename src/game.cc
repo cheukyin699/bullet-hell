@@ -7,6 +7,7 @@ using namespace sf;
 const char* Game::TITLE = "Bullet Hell";
 
 Game::Game() {
+    states.push(State_p(new MenuState()));
 }
 
 void Game::run() {
@@ -23,17 +24,19 @@ void Game::run() {
                     w.close();
                     break;
                 default:
+                    states.front()->handle(evt);
                     break;
             }
         }
 
         // Update
         Time elapsed = clock.getElapsedTime();
+        states.front()->update(elapsed);
 
         // Drawing
         w.clear();
 
-
+        states.front()->draw(w);
 
         w.display();
     }
