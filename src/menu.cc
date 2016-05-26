@@ -11,8 +11,14 @@ void MenuState::handle(Event e) {
 }
 
 void MenuState::update(Time t) {
+    for (auto&& w : widgets) {
+        w->update(t);
+    }
 }
 
 void MenuState::draw(RenderWindow& w) {
+    for (auto&& w : widgets) {
+        w->draw(w);
+    }
 }
 
