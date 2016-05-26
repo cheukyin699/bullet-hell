@@ -5,8 +5,8 @@ PlayState::PlayState() {
 
 void PlayState::handle(Event e) {
     switch (e.type) {
-    default:
-        break;
+        default:
+            break;
     }
 }
 

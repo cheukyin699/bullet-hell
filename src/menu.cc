@@ -5,8 +5,8 @@ MenuState::MenuState() {
 
 void MenuState::handle(Event e) {
     switch (e.type) {
-    default:
-        break;
+        default:
+            break;
     }
 }
 
