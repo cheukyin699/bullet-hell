@@ -16,9 +16,9 @@ void MenuState::update(Time t) {
     }
 }
 
-void MenuState::draw(RenderWindow& w) {
+void MenuState::draw(RenderWindow& win) {
     for (auto&& w : widgets) {
-        w->draw(w);
+        w->draw(win);
     }
 }
 
